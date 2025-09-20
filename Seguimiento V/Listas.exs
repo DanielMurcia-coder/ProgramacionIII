@@ -7,7 +7,7 @@ defmodule Listas do
     IO.inspect Enum.map(lista, fn x -> x * 2 end)
     IO.inspect Enum.filter(lista, fn x -> rem(x,2)== 1 end)
     lista_extendida=[lista|lista_extension]
-    IO.inspect (lista++lista_extension)
+    IO.inspect (lista ++lista_extension)
     IO.inspect (lista_extendida)
     [h|t]=lista_extendida
     IO.inspect h
